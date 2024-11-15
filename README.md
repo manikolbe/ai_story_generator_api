@@ -85,7 +85,10 @@ Confirm the deployment and note the API Gateway endpoint from the Terraform outp
 
 On successful installation, terraform will print the api endpoint url.
 for example:
-`api_endpoint = "https://myurl.execute-api.us-east-1.amazonaws.com"`
+
+```
+api_endpoint = "https://myurl.execute-api.us-east-1.amazonaws.com"
+```
 
 ### API Endpoint
 
@@ -98,7 +101,10 @@ curl -X POST "<your api endpoint>/generate" -H "Content-Type: application/json" 
 ```
 
 The response will include a generated story based on the provided prompt like:
-`Once upon a time, there was a curious little girl named Alice. One day, while sitting by a tree, she saw a white rabbit in a waistcoat hurrying by. 'I'm late, I'm late!' the rabbit cried. Intrigued, Alice followed the rabbit and tumbled down a deep rabbit hole. When she landed, she found herself in a magical world called Wonderland. There, she met all sorts of strange characters: a Mad Hatter who loved tea parties, a grinning Cheshire Cat who could disappear, and a Queen of Hearts who loved to shout 'Off with their heads!' Alice had many exciting adventures in this topsy-turvy world, growing big and small by eating magical cakes and drinking special potions. In the end, she woke up under the tree, wondering if it had all been a wonderful dream.`
+
+```
+Once upon a time, there was a curious little girl named Alice. One day, while sitting by a tree, she saw a white rabbit in a waistcoat hurrying by. 'I'm late, I'm late!' the rabbit cried. Intrigued, Alice followed the rabbit and tumbled down a deep rabbit hole. When she landed, she found herself in a magical world called Wonderland. There, she met all sorts of strange characters: a Mad Hatter who loved tea parties, a grinning Cheshire Cat who could disappear, and a Queen of Hearts who loved to shout 'Off with their heads!' Alice had many exciting adventures in this topsy-turvy world, growing big and small by eating magical cakes and drinking special potions. In the end, she woke up under the tree, wondering if it had all been a wonderful dream.
+```
 
 ---
 
@@ -113,11 +119,5 @@ terraform destroy -var-file=variables.tfvars -auto-approve
 ## License
 
 This project is licensed under the terms of the [LICENSE](./LICENSE) file.
-
----
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request.
 
 ---
