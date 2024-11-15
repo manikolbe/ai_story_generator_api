@@ -1,0 +1,5 @@
+build
+*/.terraform/*
+*terraform.tfstate
+*terraform.*
+terraform/terraform*
