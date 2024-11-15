@@ -56,20 +56,9 @@ You should reply back a json dictionary with 'story' as key and story text as va
     # Attempt to extract story JSON from response
     json_response_text = "{" + response_text
     story = json.loads(json_response_text)['story']
-    print(story)
 
-    # return {
-    #     'statusCode': 200,
-    #     'story': str(story),
-    #     'headers': {
-    #         'Content-Type': 'application/json'
-    #     }
-    # }
     return {
         "statusCode": 200,
-        # "headers": {
-        #     "Content-Type": "*/*"
-        # },
         "body": story
     }
    
